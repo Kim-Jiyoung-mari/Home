@@ -11,12 +11,15 @@
 <body>
     <main>
         <h1><a href="#"><img src="./images/logo.png"></a></h1>
-        <div class="sns">
+        <div id="wrap">
+            <div class="sns">
             <h2>회원가입</h2>
             <p>SNS계정으로 간편하게 회원가입</p>
-            <a href="#"><img src="./images/facebook.png" alt="페이스북"></a>
+            <div class="social">
+                <a href="#"><img src="./images/facebook.png" alt="페이스북"></a>
             <a href="#"><img src="./images/kakao.png" alt="카카오톡"></a>
             <a href="#"><img src="./images/naver.png" alt="네이버"></a>
+            </div>
         </div>
         <form action="#" method="post" id="joinFrm">
             <fieldset>
@@ -33,7 +36,7 @@
                             <option value="kakao">kakao.com</option>
                             <option value="hanmail">hanmail.net</option>
                         </select>
-                        <button type="button" class="common_btn authen_btn">이메일 인증하기</button>
+                        <button type="button" class="authen_btn">이메일 인증하기</button>
                     </dd>
                     <dt>비밀번호</dt>
                     <dd>
@@ -52,42 +55,46 @@
                 </dl>
                 <div class="agree_checkbox">
                     <div class="total_agree">
-                        <input type="checkbox" name="user_agree" value="all_agree" id="all_agree">
+                        <input type="checkbox" name="join_agree" value="all_agree" id="all_agree">
                         <label for="all_agree">전체동의</label>
                         <span> 선택항목에 대한 동의 포함</span>
                     </div>
                     <div class="age_checkbox">
-                        <input type="checkbox" name="age_essential" value="age_agree" id="age_agree">
+                        <input type="checkbox" name="join_agree" value="age_agree" id="age_agree">
                         <label for="age_agree">만 14세 이상입니다</label>
                         <span>(필수)</span>
                     </div>
                     <div class="use_checkbox">
-                        <input type="checkbox" name="use_essential" value="use_agree" id="use_agree">
+                        <input type="checkbox" name="join_agree" value="use_agree" id="use_agree">
                         <label for="use_agree">이용약관</label>
                         <span>(필수)</span>
                     </div>
                     <div class="individual_checkbox">
-                        <input type="checkbox" name="individual_essential" value="individual_agree" id="individual_agree">
+                        <input type="checkbox" name="join_agree" value="individual_agree" id="individual_agree">
                         <label for="individual_agree">개인정보수집 및 이용동의</label>
                         <span>(필수)</span>
                     </div>
-                    <div class="Marketing_checkbox">
-                        <input type="checkbox" name="Marketing_Choice" value="Marketing_agree" id="Marketing_agree">
+                    <div class="marketing_checkbox">
+                        <input type="checkbox" name="join_agree" value="Marketing_agree" id="Marketing_agree">
                         <label for="Marketing_agree">개인정보 마케팅 활용 동의</label>
                         <span>선택</span>
                     </div>
                     <div class="event_checkbox">
-                        <input type="checkbox" name="event_Choice" value="event_agree" id="event_agree">
-                        <label for="event_agree">개인정보 마케팅 활용 동의</label>
+                        <input type="checkbox" name="join_agree" value="event_agree" id="event_agree">
+                        <label for="event_agree">이벤트, 쿠폰, 특가 알림 메일 및 SMS 등 수신</label>
                         <span>선택</span>
                     </div>
                 </div>
                 <div class="btn">
                     <button type="submit" class="about_btn">회원가입하기</button>
                 </div>
-                <p>이미 아이디가 있으신가요?<a href="#">로그인</a></p>
+                <p class="login">
+                    <span>이미 아이디가 있으신가요?</span>
+                    <a href="#">로그인</a>
+                </p>
             </fieldset>
         </form>
+        </div>
     </main>
 </body>
 </html>
