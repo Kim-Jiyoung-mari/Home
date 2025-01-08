@@ -1,0 +1,218 @@
+/* --------------------------헤더구역--------------------------------- */
+.h_bg {
+    background-color: #FFF;
+}
+.h_bg header {
+    width: 1400px; margin: 0 auto;
+    display: flex; flex: row nowrap; justify-content: space-between;
+    padding: 20px 0;
+}
+.h_bg header h1 {}
+.h_bg header h1 > a {}
+.h_bg header h1 > a img {}
+.h_bg header .h_right {
+    width: calc(100% - 160px); padding: 0 20px 0 30px;
+}
+.h_bg header .h_right .top_layer {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    padding-bottom: 10px;
+}
+.h_bg header .h_right .top_layer .left_top {}
+.h_bg header .h_right .top_layer .left_top > a {
+    padding-right: 20px;
+    line-height: 1.5; letter-spacing: -0.02rem;
+}
+.h_bg header .h_right .top_layer .right_top {
+}
+.h_bg header .h_right .top_layer .right_top > a {padding-left: 20px;}
+.h_bg header .h_right .bottom_layer {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+.h_bg header .h_right .bottom_layer nav {}
+.h_bg header .h_right .bottom_layer nav ul {
+    display: flex; flex-flow: row nowrap;
+}
+.h_bg header .h_right .bottom_layer nav ul li {padding: 0;}
+.h_bg header .h_right .bottom_layer nav ul li > a {
+    font-size: 1.25rem; font-weight: 500; letter-spacing: -0.02rem;
+    padding-right: 30px;
+    position: relative; top: 6px
+}
+.h_bg header .h_right .bottom_layer .right_search {
+    background-color: #F2F2F2; width: 322px;
+    border-radius: 20px; padding: 5px 10px;
+}
+.h_bg header .h_right .bottom_layer .right_search #searchFrm {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+.h_bg header .h_right .bottom_layer .right_search #searchFrm #user_search {
+    background: none;
+    line-height: 1.5; letter-spacing: -0.02rem; color: #000;
+}
+.h_bg header .h_right .bottom_layer .right_search #searchFrm #user_search::placeholder {
+    line-height: 1.5; letter-spacing: -0.02rem; color: #000;
+}
+.h_bg header .h_right .bottom_layer .right_search #searchFrm .search_btn {}
+.h_bg header .h_right .bottom_layer .right_search #searchFrm .search_btn > img {}
+/* --------------------------메인구역--------------------------------- */
+/* --------------------------1행 배너라인--------------------------------- */
+main .bnr_wrap {
+    height: 700px; margin-bottom: 170px;
+    position: relative;
+}
+main .bnr_wrap .bnr_container {
+    height: 100%;
+}
+main .bnr_wrap .bnr_container .bnr1 {
+    background-image: url(../images/bnr.jpg); 
+    height: 100%;
+}
+main .bnr_wrap .bnr_container .bnr1 .content {
+    width:1400px; margin: 0 auto; height: 100%;
+}
+main .bnr_wrap .bnr_container .bnr1 .content .title {
+    width: 50%; color: #FFF;
+    position: relative; top: 40%; left: 5%;
+}
+main .bnr_wrap .bnr_container .bnr1 .content .title p:nth-of-type(1) {
+    padding-bottom: 40px;
+    font-size: 1.25rem; font-weight: 500; letter-spacing: -0.02rem;
+}
+main .bnr_wrap .bnr_container .bnr1 .content .title p:nth-of-type(2) {
+    font-size: 1.88rem; font-weight: 700; letter-spacing: -0.02rem;
+}
+main .bnr_wrap .bnr_container .bnr1 .content .title h2 {
+    font-size: 4.38rem; font-weight: 700; letter-spacing: -0.02rem;
+}
+main .bnr_wrap .prev_btn,
+main .bnr_wrap .next_btn {
+    position: absolute; top: 50%;
+}
+main .bnr_wrap .prev_btn {left: 190px;}
+main .bnr_wrap .prev_btn img {}
+main .bnr_wrap .next_btn {right: 190px;}
+main .bnr_wrap .next_btn img {}
+/* --------------------------공통디자인--------------------------------- */
+main .wrap {
+    width: 1400px; margin: 0 auto 200px;
+}
+main .wrap .row_title {
+    border-bottom: 1px solid #000; 
+    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: flex-end;
+    padding-bottom: 20px;
+}
+main .wrap .row_title .title {}
+main .wrap .row_title .title h2 {
+    font-size: 2.19rem; font-weight: 700; letter-spacing: -0.02rem;
+    padding-bottom: 11px;
+}
+main .wrap .row_title .title p {
+    font-size: 1.44rem; letter-spacing: -0.02rem;
+}
+main .wrap .row_title > a {
+    border: 1px solid #555; padding: 5px 20px;
+}
+main .wrap .row_title > a > img {
+    width: 16px; padding-left: 5px;
+}
+/* --------------------------2행 MD추천--------------------------------- */
+main .wrap .row2_contents {margin-top: 60px;}
+main .wrap .row2_contents ul {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    width: calc(100% - 60px) / 3;
+}
+main .wrap .row2_contents ul li {}
+main .wrap .row2_contents ul li > a {}
+main .wrap .row2_contents ul li > a > img {padding-bottom: 51px;}
+main .wrap .row2_contents ul li .txt {}
+main .wrap .row2_contents ul li .txt h3 {
+    padding-bottom: 6px;
+    font-size: 1.25rem; letter-spacing: -0.02rem; line-height: 1.5;
+}
+main .wrap .row2_contents ul li .txt .mid_title {
+    font-size: 1.88rem; font-weight: 700; letter-spacing: -0.02rem;
+    color: #0A5E81;
+}
+main .wrap .row2_contents ul li .txt .mid_title span {
+    font-size: 1.44rem; letter-spacing: -0.02rem;    
+    color: #000;
+}
+main .row2 {}
+/* --------------------------3행 오피스라인--------------------------------- */
+main .wrap .row3_contents {
+    margin-top: 60px;
+}
+main .wrap .row3_contents ul {
+    display: flex; flex-flow:row nowrap; justify-content: space-between;
+    width: calc(100% - 60px) / 3;
+}
+main .wrap .row3_contents ul li {}
+main .wrap .row3_contents ul li a {}
+main .wrap .row3_contents ul li a img {padding-bottom: 30px;}
+main .wrap .row3_contents ul li .txt {text-align: center;}
+main .wrap .row3_contents ul li .txt h3 {
+    padding-bottom: 20px; color: #0A5E81;
+    font-size: 1.88rem; font-weight:700; letter-spacing:-0.02rem;
+}
+main .wrap .row3_contents ul li .txt p {
+    font-size: 1.25rem; line-height:1.5; letter-spacing:-0.02rem;
+}
+/* --------------------------4행 NewIn--------------------------------- */
+main .row4 {
+    background-color: aquamarine;
+    width: 100%; position: relative;
+}
+main .row4 .row_title {
+    width: 1400px; margin: 0 auto;
+}
+main .row4 .row4_contents {
+    background-color: yellow;
+    margin-top: 60px;
+}
+main .wrap .row4_contents .row4_slides {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+/* --------------------------4행 그룹선택자자--------------------------------- */
+main .wrap .row4_contents .row4_slides .row4_left,
+main .wrap .row4_contents .row4_slides .row4_right,
+main .wrap .row4_contents .row4_slides .row4_center .c_up,
+main .wrap .row4_contents .row4_slides .row4_center .c_down {
+    position: relative;
+}
+main .wrap .row4_contents .row4_slides .row4_left > p,
+main .wrap .row4_contents .row4_slides .row4_right > p,
+main .wrap .row4_contents .row4_slides .row4_center .c_up > .cen_txt,
+main .wrap .row4_contents .row4_slides .row4_center .c_down > .cen_txt {
+    position: absolute; left: 30px; bottom: 40px;
+    color: #FFF;
+}
+/* --------------------------4행 개별선택자--------------------------------- */
+main .wrap .row4_contents .row4_slides .row4_left {}
+main .wrap .row4_contents .row4_slides .row4_left > a {}
+main .wrap .row4_contents .row4_slides .row4_left > a > img {}
+main .wrap .row4_contents .row4_slides .row4_left > p {}
+main .wrap .row4_contents .row4_slides .row4_left > p > span {}
+main .wrap .row4_contents .row4_slides .row4_center {}
+main .wrap .row4_contents .row4_slides .row4_center .c_up {}
+main .wrap .row4_contents .row4_slides .row4_center .c_up > a {}
+main .wrap .row4_contents .row4_slides .row4_center .c_up > a > img {
+    padding-bottom: 20px;
+}
+main .wrap .row4_contents .row4_slides .row4_center .c_up > .cen_txt {color: #000;}
+main .wrap .row4_contents .row4_slides .row4_center .c_down {}
+main .wrap .row4_contents .row4_slides .row4_center .c_down > a {}
+main .wrap .row4_contents .row4_slides .row4_center .c_down > a > img {}
+main .wrap .row4_contents .row4_slides .row4_center .c_down > .cen_txt {color: #000;}
+main .wrap .row4_contents .row4_slides .row4_right {}
+main .wrap .row4_contents .row4_slides .row4_right > a {}
+main .wrap .row4_contents .row4_slides .row4_right > a > img {}
+main .wrap .row4_contents .row4_slides .row4_right > p {}
+main .wrap .row4_contents .row4_slides .row4_right > p > span {}
+/* --------------------------4행 슬라이드 제어 버튼--------------------------------- */
+main .row4 .prev_btn ,
+main .row4 .next_btn {
+    position: absolute; bottom: 40%;
+}
+main .row4 .prev_btn {left: 198px;}
+main .row4 .next_btn {right: 198px;}
+/* --------------------------푸터구역--------------------------------- */
