@@ -14,7 +14,7 @@
 #wrap header .title_pre > a {}
 #wrap header .title_pre > a img {}
 #wrap header nav {position: relative; bottom: 10px;}
-#wrap header nav ul {}
+#wrap header nav ul {padding: 20px 0;}
 #wrap header nav ul li {float: left;}
 #wrap header nav ul li {margin-right: 80px;}
 #wrap header nav ul li:last-child {margin: 0;}
@@ -44,7 +44,7 @@
     border-bottom: 1px solid #5A6C57; padding: 10px;
 }
 #wrap main .container .traffic_info > * p {
-    font-size: 1.25rem; line-height:1.5;
+    font-size: 1.25rem; line-height:1.2;
 }
 /* ===================================1행 메인타이틀 */
 #wrap main .title {
@@ -83,9 +83,8 @@
 #wrap main .intro .rooms {
     position: relative;
 }
-#wrap main .intro .rooms .room_img {} /* 객실 이미지를 최소소2개이상 묶고 있는 div */
-#wrap main .intro .rooms .room_img .img {}
-#wrap main .intro .rooms .room_img .img > img {}
+#wrap main .intro .rooms .img {}
+#wrap main .intro .rooms .img > img {}
 #wrap main .intro .rooms .prev_btn,
 #wrap main .intro .rooms .next_btn {
     position: absolute; top: 50%;
@@ -132,6 +131,7 @@
 }
 #wrap main .travel .travel_list li .text {
     position: relative;
+    background-size: cover; background-position: center 60%;
 }
 #wrap main .travel .travel_list li .text .content {}
 #wrap main .travel .travel_list li .text h2 {
@@ -150,7 +150,6 @@
 #wrap main .location .img > img {
     padding-bottom: 35px;
 }
-#wrap main .location .traffic_info {}
 #wrap main .location .traffic_info > * {color: #222;}
 #wrap main .location .traffic_info ul {
     display: flex; flex-flow: row nowrap; justify-content: space-between;
@@ -168,15 +167,13 @@
 #wrap main .location .traffic_info ul .cs_info .cs_tel h4 {
     font-size: 1.56rem; font-weight:700;
 }
-#wrap main .location .traffic_info ul .cs_info .cs_address,
-#wrap main .location .traffic_info ul .cs_info .cs_tel,
-#wrap main .location .traffic_info ul .subway_info .suaway_list,
-#wrap main .location .traffic_info ul .bus_info .bus_list {padding: 10px;}
 /* ======================================================================예약문의 */
 #wrap main .location .traffic_info ul .cs_info {
     padding: 20px 20px 100px;
 }
 #wrap main .location .traffic_info ul .cs_info .title_pre {}
+#wrap main .location .traffic_info ul .cs_info .cs_address,
+#wrap main .location .traffic_info ul .cs_info .cs_tel {padding: 10px;}
 #wrap main .location .traffic_info ul .cs_info .cs_address p,
 #wrap main .location .traffic_info ul .cs_info .cs_tel p {}
 #wrap main .location .traffic_info ul .cs_info .cs_address p {padding-bottom: 40px;}
@@ -186,7 +183,7 @@
     padding: 20px 20px 70px;
 }
 #wrap main .location .traffic_info ul .bus_info .title_pre {}
-#wrap main .location .traffic_info ul .bus_info .bus_list {}
+#wrap main .location .traffic_info ul .bus_info .bus_list {padding: 10px;}
 #wrap main .location .traffic_info ul .bus_info .bus_list h4 {
     font-size: 1.13rem; font-weight:600;
 }

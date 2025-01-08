@@ -32,11 +32,11 @@
 }
 #wrap main .travel {
     margin-bottom: 100px;
-    display: flex; flex-flow: row wrap; justify-content: space-between;
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
 }
 #wrap main .travel:last-child {margin-bottom: 294px;}
 #wrap main .travel li {
-    width: calc((100% - ( 11px * 2 )) / 3);
+    width: calc((100%-(11*2))/3);
     border: 2px solid #D3F1DF; border-radius: 10px;
 }
 #wrap main .travel li::before{
@@ -45,6 +45,7 @@
     border-radius: 10px; margin: 20px 20px 0;
 }
 #wrap main .travel li .text {
+    width:413px;
     padding: 35px 20px;
 }
 #wrap main .travel li .text .content {}
@@ -89,49 +90,75 @@
         }
 /* ===================================2행 여행지 리스트 */
 #wrap main .travel1 {}
-#wrap main .travel li {margin-bottom: 100px;}
+#wrap main .travel li {}
+#wrap main .travel li::before{}
 #wrap main .travel_list li:first-child:before{
     background-image: url(../images/travel_list1.jpg);
 }
 #wrap main .travel_list li:nth-child(2):before{
     background-image: url(../images/travel_list2.jpg);
 }
-#wrap main .travel_list li:nth-child(3):before{
+#wrap main .travel_list li:last-child:before{
     background-image: url(../images/travel_list3.jpg);
 }
 #wrap main .travel li .text {}
 #wrap main .travel li .text .content {}
 #wrap main .travel li .text .content h2 {}
-#wrap main .travel li .text .content p {overflow: auto;}
+#wrap main .travel li .text .content p {}
 /* ===================================2행 여행지 리스트2 */
-#wrap main .travel_list li:nth-child(4):before{
+#wrap main .travel_list2 {}
+#wrap main .travel_list2 li {}
+#wrap main .travel_list2 li::before{}
+#wrap main .travel_list2 li:first-child:before{
     background-image: url(../images/travel_list4.jpg);
 }
-#wrap main .travel_list li:nth-child(5):before{
+#wrap main .travel_list2 li:nth-child(2):before{
     background-image: url(../images/travel_list5.jpg);
 }
-#wrap main .travel_list li:nth-child(6):before{
+#wrap main .travel_list2 li:last-child:before{
     background-image: url(../images/travel_list6.jpg);
 }
-/* ===================================3행 여행지 리스트3 */
-#wrap main .travel_list li:nth-child(7):before{
+#wrap main .travel_list2 li .text {}
+#wrap main .travel_list2 li .text .content {}
+#wrap main .travel_list2 li .text .content h2 {}
+#wrap main .travel_list2 li .text .content p {}
+/* ===================================4행 여행지 리스트3 */
+#wrap main .travel_list3 {}
+#wrap main .travel_list3 li {}
+#wrap main .travel_list3 li::before{}
+#wrap main .travel_list3 li:first-child:before{
     background-image: url(../images/travel_list7.jpg);
 }
-#wrap main .travel_list li:nth-child(8):before{
+#wrap main .travel_list3 li:nth-child(2):before{
     background-image: url(../images/travel_list8.jpg);
 }
-#wrap main .travel_list li:nth-child(9):before{
+#wrap main .travel_list3 li:last-child:before{
     background-image: url(../images/travel_list9.jpg);
 }
+#wrap main .travel_list3 li .text {}
+#wrap main .travel_list3 li .text .content {}
+#wrap main .travel_list3 li .text .content h2 {}
+#wrap main .travel_list3 li .text .content p {
+    overflow: auto;
+}
 /* ===================================5행 여행지 리스트4 */
-#wrap main .travel_list li:nth-child(10):before{
+#wrap main .travel_list4 {}
+#wrap main .travel_list4 li {}
+#wrap main .travel_list4 li::before{}
+#wrap main .travel_list4 li:first-child:before{
     background-image: url(../images/travel_list10.jpg);
 }
-#wrap main .travel_list li:nth-child(11):before{
+#wrap main .travel_list4 li:nth-child(2):before{
     background-image: url(../images/travel_list11.jpg);
 }
-#wrap main .travel_list li:nth-child(12):before{
+#wrap main .travel_list4 li:last-child:before{
     background-image: url(../images/travel_list12.jpg);
+}
+#wrap main .travel_list4 li .text {}
+#wrap main .travel_list4 li .text .content {}
+#wrap main .travel_list4 li .text .content h2 {}
+#wrap main .travel_list4 li .text .content p {
+    overflow: auto;
 }
 /* ===================================footer 구역 */
 #wrap footer {
