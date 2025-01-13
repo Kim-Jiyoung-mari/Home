@@ -184,13 +184,12 @@ main .row4 {
 main .row4 .row_title {}
 main .row4 .row4_contents {
     background-color: yellow;
-    margin-top: 60px;
 }
 main .wrap .row4_contents .row4_slides {
-    width: 100%;
-    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    width: 100%; margin: 60px 0 0;
+    display: flex; flex-flow: row nowrap; justify-content: space-around;
 }
-/* --------------------------4행 그룹선택자자--------------------------------- */
+/* --------------------------4행 그룹선택자--------------------------------- */
 main .wrap .row4_contents .row4_slides .row4_left,
 main .wrap .row4_contents .row4_slides .row4_right,
 main .wrap .row4_contents .row4_slides .row4_center .c_up,
@@ -224,9 +223,8 @@ main .wrap .row4_contents .row4_slides .row4_left > p > span {}
 main .wrap .row4_contents .row4_slides .row4_center {}
 main .wrap .row4_contents .row4_slides .row4_center .c_up {}
 main .wrap .row4_contents .row4_slides .row4_center .c_up > a {}
-main .wrap .row4_contents .row4_slides .row4_center .c_up > a > img {
-    padding-bottom: 20px;
-}
+main .wrap .row4_contents .row4_slides .row4_center .c_up > a > img {padding-bottom: 20px;}
+main .wrap .row4_contents .row4_slides .row4_center .c_up > a > img:nth-child(2) {padding: 0;}
 main .wrap .row4_contents .row4_slides .row4_center .c_up > .cen_txt {color: #000;}
 main .wrap .row4_contents .row4_slides .row4_center .c_down {}
 main .wrap .row4_contents .row4_slides .row4_center .c_down > a {}
