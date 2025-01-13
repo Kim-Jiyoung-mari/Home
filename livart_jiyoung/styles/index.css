@@ -204,6 +204,17 @@ main .wrap .row4_contents .row4_slides .row4_center .c_down > .cen_txt {
     position: absolute; left: 30px; bottom: 40px;
     color: #FFF;
 }
+main .wrap .row4_contents .row4_slides .row4_left > p,
+main .wrap .row4_contents .row4_slides .row4_right > p {
+    font-size: 2.19rem; font-weight: 700; line-height: 1.5; letter-spacing: -0.02rem;
+}
+main .wrap .row4_contents .row4_slides .row4_left p > span,
+main .wrap .row4_contents .row4_slides .row4_right p > span {
+    font-size: 1.88rem; font-weight: 500; line-height: 1.5; letter-spacing: -0.02rem;
+}
+main .wrap .row4_contents .row4_slides > * .cen_txt {
+    font-size: 1.44rem; letter-spacing:-0.02rem;
+}
 /* --------------------------4행 개별선택자--------------------------------- */
 main .wrap .row4_contents .row4_slides .row4_left {}
 main .wrap .row4_contents .row4_slides .row4_left > a {}
