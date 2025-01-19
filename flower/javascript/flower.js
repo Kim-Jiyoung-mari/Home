@@ -22,20 +22,24 @@ const birthday_flower = [
     {monthEng:'November', month:11, flower:'국화', content:'성실, 진실'},
     {monthEng:'December', month:12, flower:'포인세티아', content:'축하, 감사'},
 ]
+const flowerPic = document.querySelector('.bdayResult img');
 console.log(bmonth,flowerBtn,flowerResult);
 console.log(typeof birthday_flower)
 console.log(birthday_flower[0].monthEng);
 console.log(birthday_flower[0].month);
 console.log(birthday_flower[0].flower);
 console.log(birthday_flower[0].content);
+console.log(typeof birthday_flower[0].month);
 
+flowerPic.style.display = 'none'
 flowerBtn.addEventListener('click',()=>{
-    birthday_flower.month = Number(bmonth.value);
+    const inputMonth = Number(bmonth.value);
 
     for (let i=0; i < birthday_flower.length; i++) {
         if (birthday_flower[i].month === inputMonth) {
             flowerData = birthday_flower[i];
-        }}
+        }
+    }
 
     if (flowerData) {
         flowerResult.innerHTML = birthday(
@@ -44,12 +48,15 @@ flowerBtn.addEventListener('click',()=>{
             flowerData.flower,
             flowerData.content
         );
+        flowerPic(flowerPic, birthday_flower[i]);
     }
 })
-console.log(flowerBtn);
 
 function birthday(data1,data2,data3,data4){
     let txt= `${data1}<br>`
-    txt += `${data2}의 탄생화는 ${data3} '${data4}'입니다.`;
+    txt += `${data2}월의 탄생화는 ${data3} '${data4}'입니다.`;
     return txt;
 };
+function flowerSrc(target,number){
+    return target.src = `./images/flower${number}.jpg`
+}
