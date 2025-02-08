@@ -1,13 +1,55 @@
-const mainSwiper = new Swiper('.swiper',{
-    /* effect:'fade',  */// 제자리에서 배너 이미지 변경하는 스와이퍼 효과
+const mainSwiper = new Swiper('.main_swiper',{
     autoplay:{
-        delay:4000, // 실제 배너 5~7초 많이 사용
+        delay:5000, // 실제 배너 5~7초 많이 사용
     },
     loop:true,
     pagination:{
         el:'.main_swiper .swiper-pagination',
         type: 'bullets',
         clickable: true,
-        dynamicBullets:true, //페이지 번호 크기 차이 주는 속성
+        dynamicBullets:true,
     },
+});
+
+
+const contentSwiper = new Swiper('.c_swiper',{
+    autoplay:{
+        delay:5000, // 실제 배너 5~7초 많이 사용
+    },
+    loop:true,
+    scrollbar: {
+        el: " .progress .swiper-scrollbar",
+    },
+    navigation: {
+        nextEl: ".s_btn .next",
+        prevEl: ".s_btn .prev",
+    }
+});
+
+const contentSwiper2 = new Swiper('.c_swiper2',{
+    autoplay:{
+        delay:5000, // 실제 배너 5~7초 많이 사용
+    },
+    loop:true,
+    scrollbar: {
+        el: " .progress .swiper-scrollbar",
+    },
+    navigation: {
+        nextEl: ".s_btn .next",
+        prevEl: ".s_btn .prev",
+    }
+});
+
+const contentSwiper3 = new Swiper('.c_swiper3',{
+    autoplay:{
+        delay:5000, // 실제 배너 5~7초 많이 사용
+    },
+    loop:true,
+    scrollbar: {
+        el: " .progress .swiper-scrollbar",
+    },
+    navigation: {
+        nextEl: ".s_btn .next",
+        prevEl: ".s_btn .prev",
+    }
 });
