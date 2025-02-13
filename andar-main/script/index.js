@@ -104,14 +104,15 @@ const underSwiper = new Swiper('.under .c_swiper2',{
 const tabC = document.querySelectorAll('.row3 .tab_container > div');
 const tabT = document.querySelectorAll('.row3 .t_btm .item_tab a');
 console.log(tabC, tabT);
-for(let i of tabC){
-    function tabCHide (){ /* 탭내용 모두 숨기기용 함수 : 생성 */
-        for(let i of tabC) i.style.display = 'none';
-    }
+
+function tabCHide (){ /* 탭내용 모두 숨기기용 함수 : 생성 */
+    for(let i of tabC) i.style.display = 'none';
 }
+
 function tabClsReset(){/* 클래스 초기화 함수 : 생성 */
     for(let i of tabT) i.classList.remove('active');
 }
+
 tabCHide();
 tabClsReset();
 
@@ -135,9 +136,6 @@ tabT.forEach((target,index)=>{
         e.preventDefault();
     })
 })
-
-
-
 
 // =====================================================  4행 베스트셀러
 const beallSwiper = new Swiper('.best_all .c_swiper3',{
@@ -196,20 +194,6 @@ const bejuSwiper = new Swiper('.best_juni .c_swiper3',{
     }
 });
 
-const beaccSwiper = new Swiper('.best_acc .c_swiper3',{
-    autoplay:{
-        delay:5000, // 실제 배너 5~7초 많이 사용
-    },
-    loop:true,
-    scrollbar: {
-        el: " .row4 .be_acc .swiper-scrollbar",
-    },
-    navigation: {
-        nextEl: ".be_acc .next",
-        prevEl: ".be_acc .prev",
-    }
-});
-
 // 4행스크롤 탭 내용 바뀌기
 
 // [1]. 초기세팅
@@ -219,12 +203,13 @@ const beaccSwiper = new Swiper('.best_acc .c_swiper3',{
 //  4. 탭제목 1 클래스 적용
 const tabC2 = document.querySelectorAll('.row4 .best_container > div');
 const tabT2 = document.querySelectorAll('.row4 .t_btm .item_tab a');
+
 console.log(tabC2, tabT2);
-for(let i of tabC2){
-    function tabCHide2 (){ /* 탭내용 모두 숨기기용 함수 : 생성 */
-        for(let i of tabC2) i.style.display = 'none';
-    }
+
+function tabCHide2 (){ /* 탭내용 모두 숨기기용 함수 : 생성 */
+    for(let i of tabC2) i.style.display = 'none';
 }
+
 function tabClsReset2(){/* 클래스 초기화 함수 : 생성 */
     for(let i of tabT2) i.classList.remove('active');
 }
@@ -266,7 +251,27 @@ console.log(rowCon[0],rowCon[1],rowCon[2])
 
 golfTab.addEventListener('click',(e)=>{
     e.preventDefault();
+    console.log('골프 섹션 offsetTop:', rowCon[0].offsetTop);
     window.scrollTo({
-        left:0, top:rowCon[0].offsetTop
+        left:0, 
+        top:rowCon[0].offsetTop
+    });
+});
+
+runTab.addEventListener('click',(e)=>{
+    e.preventDefault();
+    console.log('요가 섹션 offsetTop:', rowCon[1].offsetTop);
+    window.scrollTo({
+        left:0, 
+        top:rowCon[1].offsetTop
+    });
+});
+
+yogaTab.addEventListener('click',(e)=>{
+    e.preventDefault();
+    console.log('러닝 섹션 offsetTop:', rowCon[2].offsetTop);
+    window.scrollTo({
+        left:0, 
+        top:rowCon[2].offsetTop
     });
 });
