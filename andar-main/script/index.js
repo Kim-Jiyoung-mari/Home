@@ -1,18 +1,24 @@
-// document.querySelectorAll('main > * a').forEach(a => {
-//     a.addEventListener('click', (e) => {
-//         e.preventDefault();
-//     });
-// });
+// 모바일 서브메뉴
+// 1. 모바일 서브메뉴 버튼을 클릭하면 moNav
+// 2. 메뉴 리스트가 나옴 menuList
+const moNav = document.querySelector('.m_menu');
+const menuList = document.querySelector('.m_nav');
 
-// document.querySelectorAll('nav > * a').forEach(a => {
-//     a.addEventListener('click', (e) => {
-//         e.preventDefault();
-//     });
-// });
+moNav.addEventListener('click',()=>{
+    menuList.style.display = 'block';
+});
+
+// 모바일 서브메뉴 닫기
+// 1. 닫기 버튼 누르면
+// 2. 메뉴 닫힘
+const closeBtn = document.querySelector('.close');
+closeBtn.addEventListener('click',()=>{
+    menuList.style.display = 'none'
+})
 
 const mainSwiper = new Swiper('.main_swiper',{
     autoplay:{
-        delay:5000, // 실제 배너 5~7초 많이 사용
+        delay:5000000, // 실제 배너 5~7초 많이 사용
     },
     loop:true,
     pagination:{
@@ -26,8 +32,9 @@ const mainSwiper = new Swiper('.main_swiper',{
 // 2행 에어쿨링
 const contentSwiper = new Swiper('.c_swiper',{
     autoplay:{
-        delay:5000, // 실제 배너 5~7초 많이 사용
+        delay:3000, // 실제 배너 5~7초 많이 사용
     },
+    slidesPerView:1,
     loop:true,
     scrollbar: {
         el: " .row2 .progress .swiper-scrollbar",
@@ -35,7 +42,7 @@ const contentSwiper = new Swiper('.c_swiper',{
     navigation: {
         nextEl: ".row2 .s_btn .next",
         prevEl: ".row2 .s_btn .prev",
-    }
+    },
 });
 
 // =====================================================  3행 신상
@@ -52,6 +59,7 @@ const allSwiper = new Swiper('.all .c_swiper2',{
         prevEl: ".all .all_new .prev",
     }
 });
+
 const womanSwiper = new Swiper('.womanz .c_swiper2',{
     autoplay:{
         delay:3000, // 실제 배너 5~7초 많이 사용
@@ -134,8 +142,8 @@ tabT.forEach((target,index)=>{
         tabC[index].style.display = 'block';
         //탭제목 현재 이벤트 대상의 내용의 인덱스
         e.preventDefault();
-    })
-})
+    });
+});
 
 // =====================================================  4행 베스트셀러
 const beallSwiper = new Swiper('.best_all .c_swiper3',{
@@ -241,37 +249,51 @@ tabT2.forEach((target,index)=>{
 // 탭 메뉴를 클릭하면 해당 섹션으로 이동하는 JS
 // 1. 탭 메뉴를 선택하면
 // 2. 해당되는 탭 내용으로 스크롤된다
+// for문으로 하나로 돌리기
+const golfTab = document.querySelector('.golf_tab');
+const runTab = document.querySelector('.run_tab');
+const yogaTab = document.querySelector('.yoga_tab');
 
-const golfTab = document.querySelector('.row5_tab a:nth-child(1)');
-const runTab = document.querySelector('.row5_tab a:nth-child(2)');
-const yogaTab = document.querySelector('.row5_tab a:nth-child(3)');
-const rowCon = document.querySelectorAll('.row5')
+const golfCon = document.querySelectorAll('.row5_tab .golf')
+const runCon = document.querySelectorAll('.row5_tab .running')
+const yogaCon = document.querySelectorAll('.row5_tab .yoga')
+
 console.log(golfTab,runTab,yogaTab);
-console.log(rowCon[0],rowCon[1],rowCon[2])
+console.log(golfCon,runCon,yogaCon);
 
-golfTab.addEventListener('click',(e)=>{
-    e.preventDefault();
-    console.log('골프 섹션 offsetTop:', rowCon[0].offsetTop);
-    window.scrollTo({
-        left:0, 
-        top:rowCon[0].offsetTop
+for(let i of golfCon){
+    i.addEventListener('click',(e)=>{
+        e.preventDefault();
+        console.log('골프 섹션:',golfTab.offsetTop);
+        window.scrollTo({
+            left:0,
+            top:golfTab.offsetTop,
+            behavior: 'smooth',
+        });
     });
-});
+};
 
-runTab.addEventListener('click',(e)=>{
-    e.preventDefault();
-    console.log('요가 섹션 offsetTop:', rowCon[1].offsetTop);
-    window.scrollTo({
-        left:0, 
-        top:rowCon[1].offsetTop
+for(let i of runCon){
+    i.addEventListener('click',(e)=>{
+        e.preventDefault();
+        console.log('러닝섹션:',runTab.offsetTop);
+        window.scrollTo({
+            left:0,
+            top:runTab.offsetTop,
+            behavior: 'smooth',
+        });
     });
-});
+};
 
-yogaTab.addEventListener('click',(e)=>{
-    e.preventDefault();
-    console.log('러닝 섹션 offsetTop:', rowCon[2].offsetTop);
-    window.scrollTo({
-        left:0, 
-        top:rowCon[2].offsetTop
+for(let i of yogaCon){
+    i.addEventListener('click',(e)=>{
+        e.preventDefault();
+        console.log('요가 섹션:',yogaTab.offsetTop);
+        window.scrollTo({
+            left:0,
+            top:yogaTab.offsetTop,
+            behavior: 'smooth',
+        });
     });
-});
+};
+
