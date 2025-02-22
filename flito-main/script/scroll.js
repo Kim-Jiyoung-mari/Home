@@ -143,13 +143,3 @@ gsap.to('.nlp_08 .contents',{
 });
 
 /* ============================================= 8행 */
-gsap.to('.num_img .percent .mid_title em',{
-
-    scrollTrigger:{
-        trigger:'.num_img .percent .mid_title em',
-        start:'top 80%',
-        end:'top 20%',
-        markers:true,
-        toggleAction:'play reverse restart reverse',
-    },
-});
