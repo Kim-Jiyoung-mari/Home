@@ -1,0 +1,128 @@
+main {}
+/* -------------------- 베스트셀러 */
+main .item_wrap {
+    background-color: lightgreen;
+    width: 1600px; margin: 100px auto;
+}
+main .item_wrap .title_contents {}
+/* 타이틀 탑 */
+main .item_wrap .title_contents .t_top {
+    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: flex-start;
+}
+main .item_wrap .title_contents .t_top .title_row {
+    font-size:1.50rem; font-weight:600; line-height:1.6;
+}
+main .item_wrap .title_contents .t_top .more_view {}
+main .item_wrap .title_contents .t_top .more_view > a {line-height:1.6;}
+main .item_wrap .title_contents .t_top .more_view > a > img {
+    padding-left: 5px;
+    position: relative; top: 3px;
+}
+/* 타이틀 바텀 */
+main .item_wrap .title_contents .t_btm {margin-top: 10px;}
+main .item_wrap .title_contents .t_btm > a {
+    padding-right: 20px;
+    font-size:0.94rem; font-weight:600; color: #AAA;
+}
+main .item_wrap .title_contents .t_btm > a:last-child {padding: 0;}
+main .item_wrap .title_contents .t_btm > .active {
+    background-color: #34346A; color: #FFF;
+    padding: 10px; margin-right: 20px;
+}
+/* 탭 스와이퍼 */
+main .item_wrap .tab_container {}
+/* 탭 스와이퍼:전체보기 */
+main .item_wrap .tab_container .all {}
+main .item_wrap .tab_container .all .swiper {
+    padding: 32px 0;
+}
+main .item_wrap .tab_container .all .swiper .swiper-wrapper {}
+main .item_wrap .tab_container .all .swiper .swiper-wrapper .swiper-slide {}
+main .item_wrap .tab_container .all .swiper .swiper-wrapper .swiper-slide .item {}
+main .item_wrap .tab_container .all .swiper .swiper-wrapper .swiper-slide .item > a {}
+main .item_wrap .tab_container .all .swiper .swiper-wrapper .swiper-slide .item > a > img {width: 100%;}
+main .item_wrap .tab_container .all .swiper .swiper-wrapper .swiper-slide .item .item_info {}
+main .item_wrap .tab_container .all .swiper .swiper-wrapper .swiper-slide .item .item_info .name_sale {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    padding: 15px 0 10px;
+}
+main .item_wrap .tab_container .all .swiper .swiper-wrapper .swiper-slide .item .item_info .name_sale .name {}
+main .item_wrap .tab_container .all .swiper .swiper-wrapper .swiper-slide .item .item_info .name_sale .name h3 {
+    font-size:0.94rem; font-weight:600;
+}
+main .item_wrap .tab_container .all .swiper .swiper-wrapper .swiper-slide .item .item_info .name_sale .name .i_txt {
+    font-size:0.81rem; line-height:1.2; letter-spacing: -0.02rem
+}
+main .item_wrap .tab_container .all .swiper .swiper-wrapper .swiper-slide .item .item_info .name_sale > .sale {
+    font-size:1.38rem; font-weight:600;
+}
+main .item_wrap .tab_container .all .swiper .swiper-wrapper .swiper-slide .item .item_info .price {line-height:1.6;}
+main .item_wrap .tab_container .all .swiper .swiper-wrapper .swiper-slide .item .item_info .price del{
+    color: #AAA; font-size:0.81rem; padding-left: 10px;
+}
+main .item_wrap .tab_container .all .progress {}
+main .item_wrap .tab_container .all .progress .swiper-scrollbar {
+    width: 1600px;
+    position: relative; left: 1px;
+}
+
+
+/* -------------------- 마데카 프라임 */
+main .row3 {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+main .item_wrap .left_main {}
+main .item_wrap .left_main > a {}
+main .item_wrap .left_main > a > img {}
+main .item_wrap .right_con {
+    width: calc(100% - 540px);
+}
+main .item_wrap .right_con .title_contents {}
+main .item_wrap .right_con .title_contents .t_top {
+    padding: 10px 10px 20px; border-bottom: 1px solid #AAA;
+}
+main .item_wrap .right_con .title_contents .t_top .t_left {}
+main .item_wrap .right_con .title_contents .t_top .t_left .title_row {}
+main .item_wrap .right_con .title_contents .t_top .t_left .title_btm {}
+main .item_wrap .right_con .title_contents .t_top .t_left .title_btm span {
+    font-size:0.88rem; line-height:1.6; color: #AAA;
+}
+main .item_wrap .right_con .title_contents .t_top .more_view {}
+main .item_wrap .right_con .title_contents .t_top .more_view > a {}
+main .item_wrap .right_con .title_contents .t_top .more_view > a > img {}
+main .item_wrap .right_con .title_contents .t_btm {}
+main .item_wrap .right_con .title_contents .t_btm .em {
+    font-size:0.94rem; font-weight:600;
+}
+main .item_wrap .right_con .title_contents .t_btm .txt {line-height:1.6;}
+main .item_wrap .right_con .item_contents {}
+main .item_wrap .right_con .item_contents .swiper {
+    padding:  30px 0;
+}
+main .item_wrap .right_con .item_contents .swiper .swiper-wrapper {}
+main .item_wrap .right_con .item_contents .swiper .swiper-wrapper .swiper-slide {}
+main .item_wrap .right_con .item_contents .swiper .swiper-wrapper .swiper-slide > .item {}
+main .item_wrap .right_con .item_contents .swiper .swiper-wrapper .swiper-slide > .item > a {}
+main .item_wrap .right_con .item_contents .swiper .swiper-wrapper .swiper-slide .item > a > img {width: 100%;}
+main .item_wrap .right_con .item_contents .swiper .swiper-wrapper .swiper-slide .item .item_info {margin-top: 23px;}
+main .item_wrap .right_con .item_contents .swiper .swiper-wrapper .swiper-slide .item .item_info .name_sale {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    padding: 15px 0 10px;
+}
+main .item_wrap .right_con .item_contents .swiper .swiper-wrapper .swiper-slide .item .item_info .name_sale .name {}
+main .item_wrap .right_con .item_contents .swiper .swiper-wrapper .swiper-slide .item .item_info .name_sale .name > h3 {
+    font-size:0.94rem; font-weight:600;
+}
+main .item_wrap .right_con .item_contents .swiper .swiper-wrapper .swiper-slide .item .item_info .name_sale .name > .i_txt {
+    font-size:0.81rem; line-height:1.2; letter-spacing: -0.02rem
+}
+main .item_wrap .right_con .item_contents .swiper .swiper-wrapper .swiper-slide .item .item_info .name_sale .sale {
+    font-size:1.38rem; font-weight:600;
+}
+main .item_wrap .right_con .item_contents .swiper .swiper-wrapper .swiper-slide .item .item_info .price {line-height:1.6;}
+main .item_wrap .right_con .item_contents .swiper .swiper-wrapper .swiper-slide .item .item_info .price del {color: #AAA; font-size:0.81rem; padding-left: 10px;}
+main .item_wrap .right_con .item_contents .progress {}
+main .item_wrap .right_con .item_contents .progress .swiper-scrollbar {
+    width: 1060px;
+    position: relative; left: 1px;
+}
