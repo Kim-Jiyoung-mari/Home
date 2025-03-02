@@ -2,7 +2,7 @@
 ## 프리텐다드 글꼴
 <href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css">
 ## 글꼴 가이드
-* 푸터내용 (13) | font-size:0.81rem; line-height:1.2; letter-spacing: -0.02rem
+* 푸터내용 (13) | font-size:0.81rem; line-height:1.2; letter-spacing: -0.02rem;
 * 원가 (13) | font-size:0.81rem;
 * [SB]제품명 (15) | font-size:0.94rem; font-weight:600;
 * 헤더카테고리 (15) | font-size:0.94rem;
