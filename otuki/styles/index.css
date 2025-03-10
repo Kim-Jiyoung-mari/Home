@@ -1,0 +1,5 @@
+main {}
+main .main_contents {
+    background-color: lightgray;
+    max-width: 1500px; margin: 0 auto;
+}
